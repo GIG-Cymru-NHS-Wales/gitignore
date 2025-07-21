@@ -78,13 +78,18 @@
 #     .foo.pgp
 #     .foo.scrypt
 
-!.*[-_.]aes
-!.*[-_.]age
-!.*[-_.]argon2
-!.*[-_.]bcrypt
-!.*[-_.]gpg
-!.*[-_.]pgp
-!.*[-_.]scrypt
+# This encryption section is currently commented out by default.
+# If you or your team wants to use this encryption section, 
+# then you can simply uncomment it; you want to also be aware
+# that there are tests for these paths in the /test directory.
+
+#!.*[-_.]aes
+#!.*[-_.]age
+#!.*[-_.]argon2
+#!.*[-_.]bcrypt
+#!.*[-_.]gpg
+#!.*[-_.]pgp
+#!.*[-_.]scrypt
 
 ##
 # Environment files and paths
@@ -149,37 +154,42 @@ envs[-_.]*
 #     env.age
 #     env.foo.age
 
-!.env.aes
-!.env.age
-!.env.argon2
-!.env.bcrypt
-!.env.gpg
-!.env.pgp
-!.env.scrypt
+# This encryption section is currently commented out by default.
+# If you or your team wants to use this encryption section, 
+# then you can simply uncomment it; you want to also be aware
+# that there are tests for these paths in the /test directory.
 
-!.env[-_.]*.aes
-!.env[-_.]*.age
-!.env[-_.]*.argon2
-!.env[-_.]*.bcrypt
-!.env[-_.]*.gpg
-!.env[-_.]*.pgp
-!.env[-_.]*.scrypt
-
-!env.aes
-!env.age
-!env.argon2
-!env.bcrypt
-!env.gpg
-!env.pgp
-!env.scrypt
-
-!env[-_.]*.aes
-!env[-_.]*.age
-!env[-_.]*.argon2
-!env[-_.]*.bcrypt
-!env[-_.]*.gpg
-!env[-_.]*.pgp
-!env[-_.]*.scrypt
+#!.env.aes
+#!.env.age
+#!.env.argon2
+#!.env.bcrypt
+#!.env.gpg
+#!.env.pgp
+#!.env.scrypt
+#
+#!.env[-_.]*.aes
+#!.env[-_.]*.age
+#!.env[-_.]*.argon2
+#!.env[-_.]*.bcrypt
+#!.env[-_.]*.gpg
+#!.env[-_.]*.pgp
+#!.env[-_.]*.scrypt
+#
+#!env.aes
+#!env.age
+#!env.argon2
+#!env.bcrypt
+#!env.gpg
+#!env.pgp
+#!env.scrypt
+#
+#!env[-_.]*.aes
+#!env[-_.]*.age
+#!env[-_.]*.argon2
+#!env[-_.]*.bcrypt
+#!env[-_.]*.gpg
+#!env[-_.]*.pgp
+#!env[-_.]*.scrypt
 
 ##
 # Artifacts that are typically omitted from version control
