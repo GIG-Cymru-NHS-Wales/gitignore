@@ -1,0 +1,8 @@
+.*	.foo
+.*	.foo_bar
+.*	.foo-bar
+.*	.foo.bar
+.*	dir/.foo
+.*	dir/.foo_bar
+.*	dir/.foo-bar
+.*	dir/.foo.bar

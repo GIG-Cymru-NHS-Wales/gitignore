@@ -1,0 +1,27 @@
+On branch main
+
+No commits yet
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+	new file:   .foo.keep
+	new file:   .gitignore
+	new file:   .keep
+	new file:   dir/.foo.keep
+	new file:   dir/.keep
+	new file:   dir/foo-keep
+	new file:   dir/foo.keep
+	new file:   dir/foo_keep
+	new file:   dir/keep
+	new file:   foo-keep
+	new file:   foo.keep
+	new file:   foo_keep
+	new file:   keep
+
+Ignored files:
+  (use "git add -f <file>..." to include in what will be committed)
+	.foo-keep
+	.foo_keep
+	dir/.foo-keep
+	dir/.foo_keep
+

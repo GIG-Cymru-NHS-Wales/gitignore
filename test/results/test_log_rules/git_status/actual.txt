@@ -1,0 +1,41 @@
+On branch main
+
+No commits yet
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+	new file:   .gitignore
+
+Ignored files:
+  (use "git add -f <file>..." to include in what will be committed)
+	.foo-log
+	.foo-logs
+	.foo.log
+	.foo.logs
+	.foo_log
+	.foo_logs
+	.log
+	.log-foo
+	.log.foo
+	.log_foo
+	.logs
+	.logs-foo
+	.logs.foo
+	.logs_foo
+	dir/
+	foo-log
+	foo-logs
+	foo.log
+	foo.logs
+	foo_log
+	foo_logs
+	log
+	log-foo
+	log.foo
+	log_foo
+	logs
+	logs-foo
+	logs.foo
+	logs_foo
+	subdir/
+

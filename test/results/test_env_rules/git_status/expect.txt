@@ -1,0 +1,46 @@
+On branch main
+
+No commits yet
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+	new file:   .env-example
+	new file:   .env.example
+	new file:   .env_example
+	new file:   .gitignore
+	new file:   dir/.env-example
+	new file:   dir/.env.example
+	new file:   dir/.env_example
+	new file:   dir/env-example
+	new file:   dir/env.example
+	new file:   dir/env_example
+	new file:   env-example
+	new file:   env.example
+	new file:   env_example
+	new file:   subdir/env-example/foo
+	new file:   subdir/env.example/foo
+	new file:   subdir/env_example/foo
+
+Ignored files:
+  (use "git add -f <file>..." to include in what will be committed)
+	.env
+	.env-foo
+	.env.foo
+	.env_foo
+	dir/.env
+	dir/.env-foo
+	dir/.env.foo
+	dir/.env_foo
+	dir/env
+	dir/env-foo
+	dir/env.foo
+	dir/env_foo
+	env
+	env-foo
+	env.foo
+	env_foo
+	subdir/env-foo/
+	subdir/env.foo/
+	subdir/env/
+	subdir/env_foo/
+

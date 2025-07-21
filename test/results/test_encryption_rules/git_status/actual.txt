@@ -1,0 +1,36 @@
+On branch main
+
+No commits yet
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+	new file:   .foo.aes
+	new file:   .foo.age
+	new file:   .foo.argon2
+	new file:   .foo.bcrypt
+	new file:   .foo.gpg
+	new file:   .foo.pgp
+	new file:   .foo.scrypt
+	new file:   .gitignore
+	new file:   dir/.foo.aes
+	new file:   dir/.foo.age
+	new file:   dir/.foo.argon2
+	new file:   dir/.foo.bcrypt
+	new file:   dir/.foo.gpg
+	new file:   dir/.foo.pgp
+	new file:   dir/.foo.scrypt
+	new file:   dir/foo.aes
+	new file:   dir/foo.age
+	new file:   dir/foo.argon2
+	new file:   dir/foo.bcrypt
+	new file:   dir/foo.gpg
+	new file:   dir/foo.pgp
+	new file:   dir/foo.scrypt
+	new file:   foo.aes
+	new file:   foo.age
+	new file:   foo.argon2
+	new file:   foo.bcrypt
+	new file:   foo.gpg
+	new file:   foo.pgp
+	new file:   foo.scrypt
+

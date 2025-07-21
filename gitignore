@@ -1,0 +1,265 @@
+##
+# GIG Cymru NHS Wales gitignore file example
+#
+# We use this gitignore file as a starter file for our projects.
+# We typically add many more items here depending on the project.
+#
+# https://github.com/gig-cymru-nhs-wales/gitignore/gitgnore
+#
+# These rules can be adjusted as you wish for your projects.
+#
+# We welcome constructive feedback, suggestions, questions, etc.
+##
+
+##
+# Dot files and dot paths
+##
+
+# First reject dot path files, which are conventionally intended
+# to be hidden files, or local only, or unversioned data, etc.
+# Later on, you will override this rule to accept specific paths.
+#
+# Examples:
+#
+#     .foo
+#     .foo.bar
+
+.*
+
+# Accept git-specific files that are conventionally versioned.
+#
+# Examples:
+#
+#     .gitignore
+#     .foo.gitignore
+
+!.gitignore
+!.*[-_.]*gitignore
+
+# Accept keep files, which mark directories to be versioned.
+#
+# Examples:
+#
+#     .keep
+#     .foo.keep
+
+!.keep
+!.*[-_.]*keep
+
+# Accept dot paths that are considered example paths.
+# These paths are for placeholders, samples, etc., such as:
+#
+# Examples:
+#
+#     .example
+#     .example.foo
+#     .foo.example.bar
+
+!.example
+!.examples
+
+!.example[-_.]*
+!.examples[-_.]*
+
+!.*[-_.]example
+!.*[-_.]examples
+
+!.*[-_.]example[-_.]*
+!.*[-_.]examples[-_.]*
+
+# Accept dot paths that are considered encrypted paths.
+# These paths are for secrets, confidential data, etc.
+#
+#     .foo.aes
+#     .foo.age
+#     .foo.argon2
+#     .foo.bcrypt
+#     .foo.gpg
+#     .foo.pgp
+#     .foo.scrypt
+
+!.*[-_.]aes
+!.*[-_.]age
+!.*[-_.]argon2
+!.*[-_.]bcrypt
+!.*[-_.]gpg
+!.*[-_.]pgp
+!.*[-_.]scrypt
+
+##
+# Environment files and paths
+##
+
+# First reject environment paths, which are conventionally intended
+# to be configuration variables, or local only, or for secrets, etc.
+#
+#
+# Examples:
+#
+#     .env
+#     .env.foo
+#     .envs
+#     .envs.foo
+#     env
+#     env.foo
+#     envs
+#     envs.foo
+
+.env
+.env[-_.]*
+
+.envs
+.envs[-_.]*
+
+env
+env[-_.]*
+
+envs
+envs[-_.]*
+
+# Accept env paths that are considered example paths.
+# These paths are for placeholders, samples, etc., such as:
+#
+# Examples:
+#
+#     .env.example
+#     .env.examples
+#     .env.example.foo
+#     .env.examples.foo   
+
+!.env[-_.]example
+!.env[-_.]examples
+
+!.env[-_.]example[-_.]*
+!.env[-_.]examples[-_.]*
+
+!env[-_.]example
+!env[-_.]examples
+
+!env[-_.]example[-_.]*
+!env[-_.]examples[-_.]*
+
+# Accept env paths that are considered encrypted paths.
+# These paths are for secrets, confidential data, etc.
+#
+# Examples:
+#
+#     .env.age
+#     .env.foo.age
+#     env.age
+#     env.foo.age
+
+!.env.aes
+!.env.age
+!.env.argon2
+!.env.bcrypt
+!.env.gpg
+!.env.pgp
+!.env.scrypt
+
+!.env[-_.]*.aes
+!.env[-_.]*.age
+!.env[-_.]*.argon2
+!.env[-_.]*.bcrypt
+!.env[-_.]*.gpg
+!.env[-_.]*.pgp
+!.env[-_.]*.scrypt
+
+!env.aes
+!env.age
+!env.argon2
+!env.bcrypt
+!env.gpg
+!env.pgp
+!env.scrypt
+
+!env[-_.]*.aes
+!env[-_.]*.age
+!env[-_.]*.argon2
+!env[-_.]*.bcrypt
+!env[-_.]*.gpg
+!env[-_.]*.pgp
+!env[-_.]*.scrypt
+
+##
+# Artifacts that are typically omitted from version control
+##
+
+# Ignore backup directories and files.
+#
+# Examples:
+#
+#     backup
+#     backups
+#     backup.foo
+#     backups.foo
+#     foo.backup
+#     foo.backups
+
+backup
+backups
+
+*[-_.]*backup
+*[-_.]*backups
+
+backup[-_.]**
+backups[-_.]**
+
+# Ignore temporary directories and files.
+#
+# Examples:
+#
+#     tmp
+#     temp
+#     tmp.foo
+#     temp.foo
+#     foo.tmp
+#     foo.temp
+
+tmp
+temp
+
+*[-_.]*tmp
+*[-_.]*temp
+
+tmp[-_.]**
+temp[-_.]**
+
+# Ignore log directories and files.
+#
+# Examples:
+#
+#     log
+#     logs
+#     log.foo
+#     logs.foo
+#     foo.log
+#     foo.logs
+log
+logs
+
+*[-_.]*log
+*[-_.]*logs
+
+log[-_.]**
+logs[-_.]**
+
+# Ignore cache directories and files.
+#
+# Examples:
+#
+#     cache
+#     caches
+#     cache.foo
+#     caches.foo
+#     foo.cache
+#     foo.caches
+
+cache
+caches
+
+*[-_.]*cache
+*[-_.]*caches
+
+cache[-_.]**
+caches[-_.]**
