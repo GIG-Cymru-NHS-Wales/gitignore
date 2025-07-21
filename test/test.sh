@@ -280,9 +280,15 @@ test_gitignore_rules
 test_dot_rules
 test_keep_rules
 test_env_rules
-test_encryption_rules
 test_example_rules
 test_backup_rules
 test_tmp_rules
 test_log_rules
 test_cache_rules
+
+# This encryption section is currently commented out by default.
+# If you or your team wants to use this encryption section, 
+# then you can simply uncomment it; you want to also be aware
+# that there are matchers for these in the file `gitignore`.
+
+#test_encryption_rules
