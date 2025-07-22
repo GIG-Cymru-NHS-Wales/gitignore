@@ -276,6 +276,36 @@ test_cache_rules() {
     assert "test_cache_rules"
 }
 
+test_secret_rules() {
+    setup
+    mkdir dir
+    mkdir subdir
+    for x in \
+        secret \
+        secret.foo \
+        secret-foo \
+        secret_foo \
+        foo.secret \
+        foo-secret \
+        foo_secret \
+        secrets \
+        secrets.foo \
+        secrets-foo \
+        secrets_foo \
+        foo.secrets \
+        foo-secrets \
+        foo_secrets
+    do
+        touch ".$x"
+        touch "$x"
+        touch "dir/.$x"
+        touch "dir/$x"
+        mkdir "subdir/$x"
+        touch "subdir/$x/foo"
+    done
+    assert "test_secret_rules"
+}
+
 test_gitignore_rules
 test_dot_rules
 test_keep_rules
@@ -285,6 +315,7 @@ test_backup_rules
 test_tmp_rules
 test_log_rules
 test_cache_rules
+test_secret_rules
 
 # This encryption section is currently commented out by default.
 # If you or your team wants to use this encryption section, 

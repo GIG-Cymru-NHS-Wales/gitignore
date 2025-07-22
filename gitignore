@@ -273,3 +273,23 @@ caches
 
 cache[-_.]**
 caches[-_.]**
+
+# Ignore secret directories and files.
+#
+# Examples:
+#
+#     secret
+#     secrets
+#     secret.foo
+#     secrets.foo
+#     foo.secret
+#     foo.secrets
+
+secret
+secrets
+
+*[-_.]*secret
+*[-_.]*secrets
+
+secret[-_.]**
+secrets[-_.]**
